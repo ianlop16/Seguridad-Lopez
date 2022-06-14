@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Grilla base*/
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas:
+        "nav header header header"
+        "nav primeraSeccion primeraSeccion aside"
+        "nav segundaSeccion segundaSeccion aside"
+        "footer footer footer footer";
+    background-color: #313c82;
+    color: white;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoDesktop {
+    animation-duration: 2s;
+    animation-name: aparecer-y-agrandar;
+    animation-iteration-count: 5s;
+    width: 100px;
+    margin: 8px;
+}
+
+@keyframes aparecer-y-agrandar{
+    0% {
+        opacity: 0;
+        width: 20px;
+    }
+    100% {
+        opacity: 1;
+        width: 100px;
+    }
+ }
+ 
+
+.nav ul {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.nav li {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav li:hover {
+    background-color: #1d8694;
+    transform: skewX(10deg);
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.header {
+    grid-area: header;
+    background-image: linear-gradient(rgba(18, 0, 181, 0.467), rgb(0, 255, 242));
+    color: black;
+    min-height: 15vh;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin: 3rem;
+}
+
+.primeraSeccion {
+    grid-area: primeraSeccion;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeraSeccion h2 {
+    font-size: 2rem;
+}
+
+.primeraSeccion p {
+    max-width: 550px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.primeraSeccion button {
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.segundaSeccion {
+    grid-area: segundaSeccion;
+    display: flex;
+    flex-direction: column;
+}
+
+.segundaSeccion h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.segundaSeccion div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.segundaSeccion img {
+    max-width: 350px;
+}
+
+.segundaSeccion p {
+    max-width: 350px;
+    text-align: center;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.aside a {
+    color: #1d8694;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer i{
+    font-size: 4rem;
+    color: #a4c639;
+
+}
+
+.footer i:hover{
+    color: white;
+}
+
+.img {
+    width: 99.9vw;
+}
+
+.block-parrafo {
+    height: 45px;
+    background-color: #CDEDFD;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer {
+    background-color: #BDC2BF;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer li{
+    list-style: none;
+    border: black solid 3px;
+    padding: 10px;
+    background-color: lightblue;
+    margin-inline: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.parrafo {
+    background-image: url(https://www.hyaip.com/media/vigilancia-tecnologica-patentes.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 500px ;
+    padding-bottom: 500px ;
+    width: 100%;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.parrafo2 {
+    background-image: url(https://criptomonedaseico.com/wp-content/uploads/2018/09/www.criptomonedaseico.com-ibm-mejora-la-tecnologia-de-vigilancia-de-nypd-para-filtrar-citzens-por-color-de-piel.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 500px ;
+    padding-bottom: 500px ;
+    width: 100%;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.parrafo3 {
+    background-image: url(https://www.marypepas.com/wp-content/uploads/2020/12/MP_POST_servicio_cliente.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 870px ;
+    padding-bottom: 130px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(21, 21, 148);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainS {
+    background-color: #CDEDFD;
+    display: inline-block;
+    padding-top: 20px;
+    width: 44%;
+    padding-left: 28%;
+    padding-right: 28%;
+    font-size: 25px;
+}
+
+.mainS div{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mainP {
+    background-color: #CDEDFD;
+    display: inline-block;
+    padding-top: 20px;
+    width: 44%;
+    padding-left: 28%;
+    padding-right: 28%;
+    font-size: 25px;
+}
+
+.mainP div{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imgP {
+    display: inline-block;
+    padding-top: 20px;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.mainC {
+
+    background-color: #CDEDFD;
+}
+
+/*RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST*/
+/*MOBILE LAST = MAX-WIDTH*/
+@media (max-width: 768px) {
+    .grilla{
+        grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "primeraSeccion primeraSeccion primeraSeccion aside"
+        "segundaSeccion segundaSeccion segundaSeccion aside"
+        "footer footer footer footer";
+    }
+    .nav{
+        flex-direction: row;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+    }
+    .segundaSeccion img {
+        width: 200px;
+    }
+}
+
+/*DISPOSITIVO CHICOS // SM */
+
+@media (max-width:375px) {
+    .nav{
+        flex-direction: column;
+    }
+    .nav li {
+        padding: 5px;
+    }
+    .segundaSeccion img{
+        display: none;
+    }
+}
+
+
+
